@@ -1,0 +1,98 @@
+
+
+Sun Apr 12 13:18:09 2015
+Command line: TestDisk
+
+TestDisk 6.14, Data Recovery Utility, July 2013
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 3.13.0-48-generic (#80-Ubuntu SMP Thu Mar 12 11:16:15 UTC 2015) x86_64
+Compiler: GCC 4.8
+Compilation date: 2013-10-29T01:29:29
+ext2fs lib: 1.42.9, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none
+/dev/sda: LBA, HPA, LBA48, DCO support
+/dev/sda: size       250069680 sectors
+/dev/sda: user_max   250069680 sectors
+/dev/sda: native_max 250069680 sectors
+/dev/sda: dco        250069680 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 1 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 128 GB / 119 GiB - CHS 15566 255 63, sector size=512 - TOSHIBA THNSNF128GMCS, S/N:137S10KET67Y, FW:FSTAN103
+Disk /dev/sdb - 1000 GB / 931 GiB - CHS 121597 255 63, sector size=512 - WD My Passport 07A8, FW:1033
+
+Partition table type default to Intel
+Disk /dev/sdb - 1000 GB / 931 GiB - WD My Passport 07A8
+Partition table type: Intel
+
+Analyse Disk /dev/sdb - 1000 GB / 931 GiB - CHS 121597 255 63
+Current partition structure:
+
+Partition sector doesn't have the endmark 0xAA55
+
+search_part()
+Disk /dev/sdb - 1000 GB / 931 GiB - CHS 121597 255 63
+BAD_RS LBA=1612997195 8691580
+check_part_i386 failed for partition type 0B
+     FAT32                100404 110  6 150846 227 32  810358128
+This partition ends after the disk limits. (start=1612997195, size=810358128, end=2423355322, disk end=1953458176)
+Disk /dev/sdb - 1000 GB / 931 GiB - CHS 121597 255 63
+Check the harddisk size: HD jumpers settings, BIOS detection...
+The harddisk (1000 GB / 931 GiB) seems too small! (< 1240 GB / 1155 GiB)
+The following partition can't be recovered:
+     FAT32                100404 110  6 150846 227 32  810358128
+
+Results
+
+interface_write()
+ 
+No partition found or selected for recovery
+
+search_part()
+Disk /dev/sdb - 1000 GB / 931 GiB - CHS 121597 255 63
+BAD_RS LBA=1612997195 8691580
+check_part_i386 failed for partition type 0B
+     FAT32                100404 110  6 150846 227 32  810358128
+This partition ends after the disk limits. (start=1612997195, size=810358128, end=2423355322, disk end=1953458176)
+Disk /dev/sdb - 1000 GB / 931 GiB - CHS 121597 255 63
+Check the harddisk size: HD jumpers settings, BIOS detection...
+The harddisk (1000 GB / 931 GiB) seems too small! (< 1240 GB / 1155 GiB)
+The following partition can't be recovered:
+     FAT32                100404 110  6 150846 227 32  810358128
+
+Results
+
+interface_write()
+ 
+No partition found or selected for recovery
+simulate write!
+
+write_mbr_i386: starting...
+Store new MBR code
+write_all_log_i386: starting...
+No extended partition
+
+Analyse Disk /dev/sdb - 1000 GB / 931 GiB - CHS 121597 255 63
+Current partition structure:
+
+Partition sector doesn't have the endmark 0xAA55
+
+search_part()
+Disk /dev/sdb - 1000 GB / 931 GiB - CHS 121597 255 63
+Search for partition aborted
+
+Results
+
+interface_write()
+ 
+No partition found or selected for recovery
+simulate write!
+
+write_mbr_i386: starting...
+Store new MBR code
+write_all_log_i386: starting...
+No extended partition
+
+Interface Advanced
+Partition table type default to Intel
+
+TestDisk exited normally.

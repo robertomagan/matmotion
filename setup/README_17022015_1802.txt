@@ -1,0 +1,9 @@
+experiment type: simulated
+movement pattern: RandomWaypoint
+type of experiment mobile: dynamic
+shiftyng X to : 0.5
+shiftyng Y to : 0.5
+bonnmotion file path: motion/3UN_3AN/RWP/1/
+ARGoS scenario: 3UN_3AN.xml
+Experiment duration: 10 (s)
+Experiment elapsed time: 11 (s)

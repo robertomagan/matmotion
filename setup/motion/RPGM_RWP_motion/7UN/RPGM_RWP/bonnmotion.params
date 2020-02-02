@@ -1,0 +1,15 @@
+model=RPGM
+ignore=0.0
+randomSeed=24205
+x=6.6
+y=5.4
+duration=600.0
+nn=7
+circular=false
+groupsize_E=2.0
+groupsize_S=0.0
+pGroupChange=0.0
+maxdist=0.8
+minspeed=0.1
+maxspeed=0.1
+maxpause=0.0
