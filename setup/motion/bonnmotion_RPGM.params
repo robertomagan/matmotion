@@ -6,6 +6,7 @@ y=5.4
 duration=600.0
 nn=20
 circular=false
+dim=3
 groupsize_E=2.0
 groupsize_S=0.0
 pGroupChange=0.0
