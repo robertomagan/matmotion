@@ -2,6 +2,8 @@
 
 Mobile Ad hoc networks node motion generation tool. It is based on the well-known motion pattern generation [Bonnmotion framework] (https://sys.cs.uos.de/bonnmotion/index.shtml)
 
+![An example of a running scenario](front.jpg "An example of a running scenario")
+
 ## Requirements
 **matmotion** has been tested on Matlab R2016b and Linux Unbuntu 18 LTS 64 bits
 Most recent **bonmotion** version (v3.0.1) is used here. Additionally, it is has been compiled with JRE 1.8.0_201. Depending on the platform and the used JRE, you should compile again the framework. For that: 1) remove ```bonnmotion-3.0.1``` folder, 2) extract again ```bonnmotion-3.0.1.zip``` file, 3) go inside the recent created folder and 4) execute ```./install``` script.
