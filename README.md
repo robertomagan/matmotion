@@ -28,6 +28,7 @@ This example generates 2 different RandomWaypoint movement patterns sequence (re
 |R                |1               |                  |              |Coverage range (m)           |
 |xmax             |6.6             |x                 |6.6           |X axis max area (m)           |
 |ymax             |5.4             |y                 |5.4           |Y axis max area (m)           |
+|                 |                |dim               |3             |Scenario dimensions (2D --> dim=3)           |
 |sim_time         |600             |duration          |600           |Total number of generate positions           |
 |rep_time         |2               |                  |              |Total number of repetitions          |
 |type_movement    |'RandomWaypoint'|model             |RandomWaypoint|Motion pattern selected          |
@@ -97,6 +98,7 @@ randomSeed=12345
 x=6.6
 y=5.4
 duration=600.0
+dim=3
 nn=56
 circular=false
 minspeed=0.1
