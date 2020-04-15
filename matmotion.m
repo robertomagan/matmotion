@@ -30,7 +30,7 @@ switch nagentnodes,
     case 5,
         orig_AN = [0 0; 1 0; 1 1; 0 1; 2 0];
     case 6,
-        orig_AN = [0 0; 1 0; 1 1; 0 1; 2 0; 0 2];
+        orig_AN = [2.5 2.5; 2 2; 3 3; 1 1; 4 4; 3.5 3.5];
 
     otherwise,
         disp('Select a correct number of RNs ...'), return;
@@ -45,7 +45,7 @@ xmax = 6.6;
 ymax = 5.4;
 
 % simulation steps.
-sim_time = 600;
+sim_time = 300;
 
 % # of repetitions. Each repetition corresponds with a different scenario.
 % At the end the optimizationi routine will be called rep_time x sim_time
