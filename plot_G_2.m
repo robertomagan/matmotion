@@ -42,24 +42,6 @@ for i=1:size(usernodes,1),
     end
 end
 
-if (draw_manodes && attack~=0),
-
-for i=1:size(ma_nodes,1),
-    h_ma = plot(ma_nodes(i,1), ma_nodes(i,2),'rv');
-    set(h_ma,'XData',ma_nodes(i,1),'YData', ma_nodes(i,2));
-    set(h_ma,'Marker','v');
-    set(h_ma,'MarkerFaceColor','red');
-    text(ma_nodes(i,1) + 0.10, ma_nodes(i,2) - 0.10,num2str(ma_nodes_ids(i)));
-    if(coordinates)
-        text(ma_nodes(i,1), ma_nodes(i,2) - 0.15,['[' num2str(ma_nodes(i,1)) ', ' num2str(ma_nodes(i,2)) ']']);
-    end
-    if(draw_circle)
-        circle(ma_nodes(i,1),ma_nodes(i,2),r,[1 0 0],'-.');
-    end
-end
-end
-
-
 axis([0 6.6 0 5.4]);
 %axis([0 5 0 5]);
 

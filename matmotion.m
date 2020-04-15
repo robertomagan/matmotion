@@ -5,13 +5,13 @@ clear;
 
 %% NETWORK ----------------------------------------------------------------
 % num of user nodes (UN)
-nusernodes = 5;
+nusernodes = 50;
 
 % UN velocity
 un_vmax = 0.1;% m/s -> metros recorridos en cada time step
 % num of agent nodes (AN) == number of APs
 % An agent node is equivalent to a relay node
-nagentnodes = 3;
+nagentnodes = 6;
 
 % Initial location of the relays nodes
 switch nagentnodes,
@@ -31,7 +31,7 @@ switch nagentnodes,
         orig_AN = [0 0; 1 0; 1 1; 0 1; 2 0];
     case 6,
         orig_AN = [0 0; 1 0; 1 1; 0 1; 2 0; 0 2];
-        %orig_AN = [5.5 1; 5.5 2.5; 1 3];
+
     otherwise,
         disp('Select a correct number of RNs ...'), return;
 end
@@ -45,7 +45,7 @@ xmax = 6.6;
 ymax = 5.4;
 
 % simulation steps.
-sim_time = 10;
+sim_time = 600;
 
 % # of repetitions. Each repetition corresponds with a different scenario.
 % At the end the optimizationi routine will be called rep_time x sim_time
@@ -56,8 +56,8 @@ rep_time = 2;
 base_path_movements = ['.' filesep 'setup' filesep 'motion' filesep];
 
 % Different kinds of movements
-%type_movement = 'RandomWaypoint';
-type_movement = 'RPGM';
+type_movement = 'RandomWaypoint';
+%type_movement = 'RPGM';
 %type_movement = 'MRWP';
 %type_movement = 'RAND';
 path_movements = [base_path_movements num2str(nusernodes) 'UN_' num2str(nagentnodes) 'AN' filesep type_movement filesep];
