@@ -1,6 +1,6 @@
 model=RPGM
 ignore=0.0
-randomSeed=12345
+randomSeed=31141
 x=6.6
 y=5.4
 duration=100.0
